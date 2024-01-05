@@ -1,0 +1,43 @@
+/*
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+*/
+
+body{
+    background: #1e1e1e
+}
+
+#header{
+    background-color: #1e1e1e;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav{
+    text-align: right;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: #569cd6;
+    text-decoration: none;
+    margin:20px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#intro{
+    color: #569cd6;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
