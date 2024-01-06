@@ -11,16 +11,19 @@ body{
     background: #1e1e1e
 }
 
-#header{
-    background-color: #1e1e1e;
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo{
     width: 140px;
-}
-
-nav{
-    text-align: right;
 }
 
 nav ul{
@@ -33,11 +36,35 @@ nav ul li a{
     margin:20px;
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
+    position: relative;
 }
 
-#intro{
-    color: #569cd6;
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #569cd6;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 15%;
+    font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
-
-
+    color: #569cd6;
 }
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ce9178;
+}
+
